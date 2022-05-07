@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
     <link rel="stylesheet" href="css/main.css">
-
 </head>
 <body>
     <h1 class="visually-hidden">United Market - интернет&ndash;платформа для электронной коммерции</h1>
@@ -92,7 +92,7 @@
         
         <p class="um-feedback__text">Оставляй свои контакты, мы свяжемся с тобой и расскажем подробно об условиях</p>
 
-        <form class="fb-form  um-feedback__fb-form" id="form-send" action="#" method="POST" enctype="multipart/form-data">
+        <form class="fb-form um-feedback__fb-form" id="form-send" action="#" method="POST" enctype="multipart/form-data">
 
             <label class="fb-form__wrap" for="fb-name">
 				<span class="fb-form__text">Имя <span class="fb-form__elem">&#42;</span></span>
@@ -100,36 +100,25 @@
 			</label>
 			<label class="fb-form__wrap" for="fb-phone">
 				<span class="fb-form__text">Телефон <span class="fb-form__elem">&#42;</span></span>
-				<input class="fb-form__input" type="text" name="phone"  required="required" id="fb-phone">
+				<input class="fb-form__input" type="tel" name="phone"  required="required" id="fb-phone">
 			</label>
 			<label class="fb-form__wrap" for="fb-email">
 				<span class="fb-form__text">Email <span class="fb-form__elem">&#42;</span></span>
 				<input class="fb-form__input" type="text" name="email"  required="required" id="fb-email">
 			</label>
 			<label class="fb-form__wrap" for="fb-message">
-				<span class="fb-form__text">Сообщение <span class="fb-form__elem">&#42;</span></span>
+				<span class="fb-form__text">Сообщение</span>
 				<textarea class="fb-form__message fb-form__textarea"  id="fb-message" data-simplebar></textarea>
 			</label>
 			<button class="fb-form__send" type="submit">Отправить</button>
         </form>
 
     </section>
+
+
     <!-- feedback end  -->
-    <script>
-
-            document.addEventListener('DOMContentLoaded', function() {
-                document.querySelectorAll('.wrap-banner__btn').forEach(function(tabsBtn) {
-                    tabsBtn.addEventListener('click', function() {
-
-                    let elem = document.getElementById('form-send');
-                    elem.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                    })
-                })
-            })
-        })
-
-    </script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 </body>
 </html>

@@ -35,6 +35,8 @@
     box-shadow: 3px 4px 26px rgba(84, 88, 102, 0.25);
     border-radius: 15px;
 
+    color: $color-text-main;
+
     &::before {
         content: "";
 

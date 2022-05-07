@@ -676,6 +676,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-shadow: 3px 4px 26px rgba(84, 88, 102, 0.25);
           box-shadow: 3px 4px 26px rgba(84, 88, 102, 0.25);
   border-radius: 15px;
+  color: #0B1331;
 }
 
 .block-item::before {
