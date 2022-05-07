@@ -1,0 +1,124 @@
+.um-benefits {
+    padding: 0 15px 10px;
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 160%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 92px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__item {
+        margin-bottom: 94px;
+    }
+}
+
+.block-item {
+    position: relative;
+
+    display: block;
+    min-width: 280px;
+    max-width: 345px;
+    height: 230px;
+    padding: 84px 32px 1px;
+
+    text-align: center;
+
+
+    box-shadow: 3px 4px 26px rgba(84, 88, 102, 0.25);
+    border-radius: 15px;
+
+    &::before {
+        content: "";
+
+        display: block;
+        width: 165px;
+        height: 165px;
+
+        position: absolute;
+        top: -84px;
+        left: 90px;
+    }
+
+    &:nth-child(1):before {
+        background-image: url(../img/png/nb.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-child(2):before {
+        background-image: url(../img/png/site.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-child(3):before {
+        background-image: url(../img/png/analitic.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-child(4):before {
+        background-image: url(../img/png/messeng.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-child(5):before {
+        background-image: url(../img/png/bc.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-child(6):before {
+        background-image: url(../img/png/support.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__title {
+        margin-bottom: 9px;
+
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+    }
+
+}
+
+@media (min-width: $screen-table) {
+    .um-benefits {
+        &__title {
+            font-size: 36px;
+            line-height: 160%;
+            margin-bottom: 101px;
+        }
+    
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .um-benefits {
+        &__list {
+            max-width: 1300px;
+
+        }
+    }
+}

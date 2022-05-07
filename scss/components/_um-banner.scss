@@ -1,0 +1,136 @@
+.um-banner {
+    margin-bottom: 60px;
+    
+}
+
+.wrap-banner {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 26px;
+    padding: 29px 14px 39px;
+
+    color:$color-text-main;
+
+    background: $color-gradient;
+    background-image: url('img/png/bg-mob.png');
+    background-repeat: no-repeat;
+    background-size: 849px 477px;
+    background-position: 308px -100px;
+
+    border-radius: 40px;
+    &__title {
+        max-width: 425px;
+
+        margin-bottom: 13px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 160%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    
+    &__text {
+        max-width: 425px;
+        margin-bottom: 30px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+
+    }
+    &--dest-none {
+        display: none;
+    }
+    
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 325px;
+        min-width: 300px;
+        height: 68px;
+
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: $color-text-application;
+
+        background: $color-btn-application;
+        border-radius: 66px;
+
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            background-color: $color-text-application;
+            color: $color-btn-application;
+        }
+        &:active {
+            color: $color-text-application;
+            background: $color-btn-application;
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+    .wrap-banner {
+        margin-top: 26px;
+        padding-left:400px;
+        padding-bottom: 64px;
+
+        background-image: url('img/png/bg.png');
+        background-repeat: no-repeat;
+        background-size: 849px 477px;
+        background-position: -365px -44px;
+
+        &__title {
+            max-width: 633px;
+            margin-bottom: 17px;
+            font-size: 26px;
+        }
+        
+        &__text {
+            max-width: 633px;
+            margin-bottom: 32px;
+            font-size: 20px;
+        }
+        
+        &__btn {
+            width: 264px;
+            height: 56px;
+
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .wrap-banner {
+        margin-top: 77px;
+        padding-left:634px;
+
+        background-position: -142px -50px;
+        &__title {
+            
+            font-size: 36px;
+        }
+        
+        &__text {
+            font-size: 24px;
+        }
+        &--mob-none {
+            display: none;
+        }
+        &--dest-none {
+            display: block;
+        }
+        
+        &__btn {
+
+        }
+    }
+}

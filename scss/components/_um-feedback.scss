@@ -1,0 +1,123 @@
+.um-feedback {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 29px 16px 39px;
+
+    background-color: #3657C8;
+    border-radius: 20px;
+    margin-bottom: 103px;
+    &__title {
+        margin-bottom: 14px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 160%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #fff;
+        margin-bottom: 13px;
+    }
+}
+
+.fb-form {
+    max-width: 550px;
+    margin: 0 auto;
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: $color-text-form;
+
+        margin-bottom: 5px;
+    }
+    &__elem {
+        color: $color-star;
+    }
+    &__input {
+        padding: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: $color-text-main;
+
+        border: 2px solid #BFC6E0;
+        border-radius: 55px;
+    }
+    &__message {
+        margin-bottom: 39px;
+        min-height: 103px;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: $color-text-main;
+
+        border: 2px solid #BFC6E0;
+        border-radius: 20px;
+    }
+    &__send {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 325px;
+        min-width: 280px;
+        height: 68px;
+
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+
+        background-color: $color-btn-form;
+        border-radius: 66px;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            background-color: $color-text-application;
+            color: $color-btn-form;
+        }
+        &:active {
+            color: $color-text-application;
+            background: $color-btn-application;
+        }
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .um-feedback {
+
+        &__title {
+            font-size: 28px;
+        }
+
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .um-feedback {
+        margin-bottom: 172px;
+        &__title {
+            font-size: 36px;
+        }
+    }
+}
